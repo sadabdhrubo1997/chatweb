@@ -1,0 +1,220 @@
+@media (max-width : 1024px) {
+    .container {
+        width: 90%;
+
+    }
+
+    // header start here
+
+    #header {
+        .top {
+            padding: 1.5rem 0;
+
+            #hambarger {
+                display: block;
+                z-index: 99999999999999999;
+            }
+
+            .menu {
+                position: fixed;
+                z-index: 100000000;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px) opacity(100%) brightness(100%);
+                top: 0;
+                left: -100%;
+                overflow: hidden;
+
+                nav {
+                    ul {
+                        margin-top: 10vh;
+                        flex-direction: column;
+                        text-align: center;
+                        justify-content: start;
+
+                        li {
+                            margin-top: 2rem;
+                        }
+                    }
+                }
+            }
+
+            #menu.active {
+                left: 0;
+            }
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .left {
+                width: 100%;
+                margin-top: 4.5rem;
+
+                h1 {
+                    width: 100%;
+                    font-size: 2.5rem;
+                    margin-bottom: 1rem;
+                    text-align: center;
+
+                    br {
+                        display: none;
+                    }
+
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    margin-bottom: 3.5rem;
+
+                }
+
+                .btn_area {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        width: 15rem;
+                        height: 4.5rem;
+                        display: inline-block;
+                        background-color: #1D2A49;
+                        color: #ffffff;
+                        font-size: 1.6rem;
+                        font-weight: normal;
+                        border-radius: 2.3rem;
+                        -webkit-border-radius: 2.3rem;
+                        -moz-border-radius: 2.3rem;
+                        -ms-border-radius: 2.3rem;
+                        -o-border-radius: 2.3rem;
+                        transition: .2s;
+                        -webkit-transition: .2s;
+                        -moz-transition: .2s;
+                        -ms-transition: .2s;
+                        -o-transition: .2s;
+                        margin-right: 1.5rem;
+
+                        &:hover {
+                            background-color: #122041;
+
+                        }
+
+                        span {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            img {
+                                margin-right: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+                margin-top: 5rem;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 5rem;
+
+                img {
+                    width: 70%;
+                    height: auto;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+
+    // header end here
+
+
+
+    // About us start here
+    #about_us {
+        background-color: #36415D;
+        padding: 6.5rem 0;
+        color: #ffffff;
+
+        .main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+
+            .left {
+                order: 2;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 70%;
+                    margin-top: 7.5rem;
+                }
+            }
+
+            .right {
+                text-align: center;
+                order: 1;
+                width: 100%;
+
+                h2 {
+                    margin-top: 0;
+                    font-size: 3.6rem;
+                    font-weight: 600;
+                    margin-bottom: 2.6rem;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    line-height: 2;
+                    margin-bottom: 2.6rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    background-color: #d64c19;
+                    padding: 1.2rem 2.7rem;
+                    border-radius: 2.3rem;
+                    -webkit-border-radius: 2.3rem;
+                    -moz-border-radius: 2.3rem;
+                    -ms-border-radius: 2.3rem;
+                    -o-border-radius: 2.3rem;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    color: #ffffff;
+                    transition: .2s;
+                    -webkit-transition: .2s;
+                    -moz-transition: .2s;
+                    -ms-transition: .2s;
+                    -o-transition: .2s;
+
+                    &:hover {
+                        background-color: #da3d04;
+                    }
+                }
+            }
+        }
+    }
+
+    // About us end here
+
+
+
+
+    
+
+
+}
